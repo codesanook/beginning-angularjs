@@ -16,6 +16,24 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+
+app.get('/ex01', function (req, res) {
+    res.render('ex01');
+});
+
+app.get('/ex02', function (req, res) {
+    res.render('ex02');
+});
+
+
+
+
+
+
+
+
+
+
 app.listen(3000, function () {
     console.log("dirname %s", __dirname);
     console.log('Example app listening on port 3000!');

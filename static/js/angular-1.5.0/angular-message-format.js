@@ -877,7 +877,7 @@ MessageFormatParser.prototype.ruleInAngularExpression = function ruleInAngularEx
  * ## Example
  *
  * <example name="ngMessageFormat-example" module="msgFmtExample" deps="angular-message-format.min.js">
- * <file name="index.html">
+ * <file name="ex01.html">
  *   <div ng-controller="AppController">
  *     <button ng-click="decreaseRecipients()" id="decreaseRecipients">decreaseRecipients</button><br>
  *     <span>{{recipients.length, plural, offset:1

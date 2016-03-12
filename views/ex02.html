@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+    <script type="text/javascript" src="static/js/angular-1.5.0/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+<div>
+    <p>My first expression: {{ 5 + 5 }}</p>
+
+</div>
+<div ng-controller="costController">
+
+    <p>Total in dollar: {{ quantity * cost }}</p>
+
+</div>
+
+
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('costController', function ($scope) {
+        $scope.quantity = 2;
+        $scope.cost = 5;
+    });
+</script>
+
+</body>
+</html>

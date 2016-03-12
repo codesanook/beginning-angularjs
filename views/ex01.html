@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+    <script type="text/javascript" src="static/js/angular-1.5.0/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="homeController">
+
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('homeController', function ($scope) {
+        $scope.firstName = "Angular";
+        $scope.lastName = "JS";
+    });
+</script>
+
+
+</body>
+</html>
